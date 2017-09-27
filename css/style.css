@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: : border-box;
+}
+
+body {
+	width: 100vw;
+	height: auto; 
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+	background: url( http://api.thumbr.it/whitenoise-361x370.png?background=f6ffebff&noise=000000&density=7&opacity=47);
+}
+
+
+input {
+	padding: 5px;
+	border: 2px solid rgba(0,0,0,0.63);
+	border-radius: 25px;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+i {
+	display: inline-block;	
+	vertical-align: center;
+	position: relative;
+	bottom: -6px;
+}
+
+button {
+	display: inline;
+	margin: 10px auto;
+	width: 60px;
+	padding: 2px;
+	margin: 5px;
+}
+
+#search-area {
+	height: 50px;
+	padding: 10px;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, 
+a:visited {
+	color: #000;
+}
+
+
+a:hover, 
+a:active {
+	color:#52BE80;
+
+}
+
+li {
+	max-width: 90%;
+	height: auto;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.63);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.63);
+	padding: 10px;
+	line-height: 1.4;
+	margin: 10px 0;
+	justify-content: center;
+}
+
+ul {
+	list-style: none;
+	max-width: 800px;
+	margin:20px;
+}
+
+h1 {
+	max-width: 100%;
+	text-align: center;
+	margin-top: 80px;
+	font-size: 2.5rem;
+	position: relative;
+	font-family: 'Freckle Face', cursive;
+}
+
+.container {
+	display: flex;
+	height: 80vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.container2 {
+	display: flex;
+	height: 80vh;
+	align-items: center;
+	flex-direction: column;
+}
+
+.search-container {
+	max-width: 100%;
+}
+
