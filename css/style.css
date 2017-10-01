@@ -1,3 +1,5 @@
+/************ MAIN ELEMENTS ************************/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -12,71 +14,6 @@ body {
 	background: url( http://api.thumbr.it/whitenoise-361x370.png?background=f6ffebff&noise=000000&density=7&opacity=47);
 }
 
-
-input {
-	padding: 5px;
-	border: 2px solid rgba(0,0,0,0.63);
-	border-radius: 25px;
-	outline: none;
-	font-family: 'Poppins', sans-serif;
-	display: inline-block;
-	margin-right: 5px;
-}
-
-i {
-	display: inline-block;	
-	vertical-align: center;
-	position: relative;
-	bottom: -6px;
-}
-
-button {
-	display: inline;
-	margin: 10px auto;
-	width: 60px;
-	padding: 2px;
-	margin: 5px;
-}
-
-#search-area {
-	height: 50px;
-	padding: 10px;
-	position: relative;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:link, 
-a:visited {
-	color: #000;
-}
-
-
-a:hover, 
-a:active {
-	color:#52BE80;
-
-}
-
-li {
-	max-width: 90%;
-	height: auto;
-	-webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.63);
-    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.63);
-	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.63);
-	padding: 10px;
-	line-height: 1.4;
-	margin: 10px 0;
-	justify-content: center;
-}
-
-ul {
-	list-style: none;
-	max-width: 800px;
-	margin:20px;
-}
 
 h1 {
 	max-width: 100%;
@@ -101,7 +38,103 @@ h1 {
 	flex-direction: column;
 }
 
-.search-container {
-	max-width: 100%;
+/************** SEARCH ELEMENTS ********************/
+
+input {
+	padding: 10px;
+	border: 2px solid rgba(0,0,0,0.63);
+	border-radius: 25px;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	margin-right: 5px;
+	text-align: left;
 }
+
+button {
+	display: inline;
+	border-radius: 50%;
+	color: black;
+	padding: 5px;
+	height: 50px;
+	width: 50px;
+	background-color: #000;
+	border: none;
+	align-items: center;
+	outline: none;
+}
+
+.search-container {
+	max-width: 350px;
+}
+
+/*.fa-search {
+	display: inline-block;	
+	vertical-align: center;
+	position: relative;
+	bottom: -6px;
+}*/
+
+.fa-search {
+	position: absolute;
+	top: 16px;
+	right: 26px;
+	color: #839192;
+}
+
+.fa-random, 
+.fa-times {
+	color: #fff;
+}
+
+#search-area {
+	height: 50px;
+	padding: 10px;
+	position: relative;
+}
+
+
+#other-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/*************** RESULTS ELEMENTS *************************/
+
+li {
+	max-width: 90%;
+	height: auto;
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.63);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.63);
+	padding: 10px;
+	line-height: 1.4;
+	margin: 10px 0;
+	justify-content: center;
+	background-color: #fff;
+}
+
+ul {
+	list-style: none;
+	max-width: 800px;
+	margin:20px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+a:link, 
+a:visited {
+	color: #000;
+}
+
+
+a:hover, 
+a:active {
+	color:#52BE80;
+}
+
 

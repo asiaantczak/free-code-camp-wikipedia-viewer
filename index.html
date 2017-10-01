@@ -13,11 +13,13 @@
 		<div class="container container2" id="change">
 			<div class ='search-container'>
 				<div id="search-area">
-				<input id="keyWord" type="text" name="searchKeyword" placeholder="I am looking for ...">
-				<i class="fa fa-search fa-2x" aria-hidden="true"></i>
+					<input id="keyWord" type="text" name="searchKeyword" placeholder="I am looking for ...">
+					<span><i class="fa fa-search fa-2x" aria-hidden="true"></i></span>
 				</div>
-				<button><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random</a></button>
-				<button id="clearButton">Clear</button>
+				<div id="other-buttons">
+					<button><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><i class="fa fa-random fa-lg" aria-hidden="true"></i></a></button>
+					<button id="clearButton"><i class="fa fa-times fa-lg" aria-hidden="true"></i></button>
+				</div>
 			</div>
 			<div class='results-container'>
 				<ul id="results" class="display"></ul>

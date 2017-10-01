@@ -52,7 +52,7 @@ var dataApi = {
 }
 
 
-
+/****************** DISPLAY SEARCH RESULTS/ CHANGE LAYOUT*****************************/
 var searchButton=document.querySelector('i');
 var input = document.querySelector('input');
 searchButton.addEventListener('click', function () {
@@ -62,8 +62,8 @@ searchButton.addEventListener('click', function () {
 	dataApi.getSearchResult();
 	
 });
-
-
+ 
+/************************** CLEAR SEARCH RESULTS/ CHANGE LAYOUT **********************************************/
 var clearButton=document.getElementById("clearButton");
 clearButton.addEventListener('click', function() {
 	document.querySelector('ul').style.display= "none";
