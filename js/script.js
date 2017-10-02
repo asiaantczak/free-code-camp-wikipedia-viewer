@@ -55,7 +55,7 @@ var dataApi = {
 /****************** DISPLAY SEARCH RESULTS/ CHANGE LAYOUT*****************************/
 var searchButton=document.querySelector('i');
 var input = document.querySelector('input');
-searchButton.addEventListener('click', function () {
+searchButton.addEventListener('click', function() {
 	if (input.value === '') {
 		alert('Your input is empty! Add text you are looking for!') 
 	} else {
@@ -64,10 +64,21 @@ searchButton.addEventListener('click', function () {
 		document.querySelector('ul').style.display= "block";
 		dataApi.getSearchResult();
 	}
-	
-	
 });
  
+input.addEventListener('keydown', function(e) {
+	if (e.keyCode === 13) {
+		if (input.value === '') {
+			alert('Your input is empty! Add text you are looking for!') 
+		} else {
+			document.getElementById('change').classList.remove("container");
+			document.getElementById('change').classList.add("container2");
+			document.querySelector('ul').style.display= "block";
+			dataApi.getSearchResult();
+		}
+	}
+});
+
 /************************** CLEAR SEARCH RESULTS/ CHANGE LAYOUT **********************************************/
 var clearButton=document.getElementById("clearButton");
 clearButton.addEventListener('click', function() {
