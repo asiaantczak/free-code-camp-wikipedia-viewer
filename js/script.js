@@ -56,10 +56,15 @@ var dataApi = {
 var searchButton=document.querySelector('i');
 var input = document.querySelector('input');
 searchButton.addEventListener('click', function () {
-	document.getElementById('change').classList.remove("container");
+	if (input.value === '') {
+		alert('Your input is empty! Add text you are looking for!') 
+	} else {
+		document.getElementById('change').classList.remove("container");
 	document.getElementById('change').classList.add("container2");
 	document.querySelector('ul').style.display= "block";
 	dataApi.getSearchResult();
+	}
+	
 	
 });
  
